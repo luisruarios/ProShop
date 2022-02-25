@@ -1,0 +1,32 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "MERN Shopping cart app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node back-end/server",
+    "server": "nodemon back-end/server",
+    "client": "npm start --prefix front-end",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisruarios/ProShop.git"
+  },
+  "author": "Luis Rua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisruarios/ProShop/issues"
+  },
+  "homepage": "https://github.com/luisruarios/ProShop#readme",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "currently": "^0.0.8",
+    "nodemon": "^2.0.15"
+  }
+}
